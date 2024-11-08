@@ -1,0 +1,122 @@
+body {
+    background-color: #7fa1bf; /* встановлює фоновий колір */
+}
+
+.intro {
+    display: flex; /* Розміщує елементи в рядок */
+    gap: 200px; /* Встановлює інтервал між словами */
+    justify-content: center; /* Вирівнює слова по центру */
+    padding: 10px; /* Відступ навколо блоку */
+    font-family: 'Noto Serif', sans-serif; /* Встановлення шрифту */
+    font-size: 22px;
+    background-color: #e9ded5;
+    line-height: 1.5; /* Висота рядка */
+    color: #7fa1bf;
+    
+}
+
+.t1:hover{
+
+    transform: scale(1.1); /* Збільшуємо текст */
+    color:#4c779d ; /* Змінюємо колір на помаранчевий */
+    transition: all 0.3s ease; /* Плавний перехід для всіх змін */
+}
+
+.t2:hover{
+
+    transform: scale(1.1); /* Збільшуємо текст */
+    color:#4c779d ; /* Змінюємо колір на помаранчевий */
+    transition: all 0.3s ease; /* Плавний перехід для всіх змін */
+}
+
+.t3:hover{
+
+    transform: scale(1.1); /* Збільшуємо текст */
+    color:#4c779d ; /* Змінюємо колір на помаранчевий */
+    transition: all 0.3s ease; /* Плавний перехід для всіх змін */
+}
+
+.t4:hover{
+
+    transform: scale(1.1); /* Збільшуємо текст */
+    color:#4c779d ; /* Змінюємо колір на помаранчевий */
+    transition: all 0.3s ease; /* Плавний перехід для всіх змін */
+}
+
+.t5:hover{
+
+    transform: scale(1.1); /* Збільшуємо текст */
+    color:#4c779d ; /* Змінюємо колір на помаранчевий */
+    transition: all 0.3s ease; /* Плавний перехід для всіх змін */
+}
+
+/* Стиль для лівої панелі */
+.left-panel {
+    margin-top: 10px;
+    margin-left: 10px;
+    position: fixed; /* Фіксує блок, щоб він залишався на екрані при прокрутці */
+    top: 60px; /* Відступ від верху, щоб не перекривати .intro */
+    left: 0;
+    width: 130px; /* Ширина лівого блоку */
+    height: calc(100vh - 60px); /* Розтягується на всю висоту вікна мінус висота .intro */
+    background-color: #e9ded5; /* Фоновий колір */
+    color: #7fa1bf; /* Колір тексту */
+    padding: 20px; /* Відступи всередині блоку */
+    box-sizing: border-box; /* Щоб відступи не впливали на ширину блоку */
+    overflow-y: auto; /* Додає прокрутку, якщо тексту більше, ніж висота блоку */
+}
+
+/* Стиль для основного контенту сторінки */
+.content {
+    margin-left: 100px; /* Відступ зліва, щоб не перекривати лівий блок */
+    color: #e9ded5;
+    font-family: 'Noto Serif', sans-serif; /* Встановлення шрифту */
+    text-align: center;
+   margin-top: 30px; 
+   
+}
+
+/* Стиль для тега .t6 */
+.t6 {
+    
+    
+    font-size: 60px; /* Розмір шрифту */
+    transition: all 0.3s ease; /* Плавний перехід для всіх змін */
+    display: inline-block;
+}
+
+.t6:hover {
+    transform: scale(1.1); /* Збільшуємо текст */
+    color: #4c779d; /* Змінюємо колір */
+}
+
+/* Стиль для тега .t7 */
+.t7 {
+    font-size: 20px; /* Розмір шрифту */
+    transition: all 0.3s ease; /* Плавний перехід для всіх змін */
+    display: inline-block;
+    
+}
+
+.t7:hover {
+    transform: scale(1.1); /* Збільшуємо текст */
+    color: #4c779d; /* Змінюємо колір */
+}
+
+.text {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column; /* Вертикальне розташування букв */
+    align-items: center; /* Вирівнювання по центру */
+    font-size: 30px; /* Розмір шрифту */
+    font-family: 'Noto Serif', sans-serif; /* Шрифт */
+    line-height: 1; /* Висота рядка між літерами */
+   
+}
+
+
+
+.text span {
+    display: block; /* Кожна буква буде на окремому рядку */
+    margin-bottom: 5px; /* Відступ між буквами */
+}
