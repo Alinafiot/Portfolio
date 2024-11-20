@@ -3,16 +3,23 @@ body {
 }
 
 .intro {
-    display: flex; /* Розміщує елементи в рядок */
-    gap: 200px; /* Встановлює інтервал між словами */
-    justify-content: center; /* Вирівнює слова по центру */
-    padding: 10px; /* Відступ навколо блоку */
-    font-family: 'Noto Serif', sans-serif; /* Встановлення шрифту */
+    position: fixed;
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    padding: 10px;
+    font-family: 'Noto Serif', sans-serif;
     font-size: 22px;
     background-color: #e9ded5;
-    line-height: 1.5; /* Висота рядка */
     color: #7fa1bf;
-    
+}
+
+.intro a {
+    text-decoration: none; 
+    color: #7fa1bf; 
+    font-family: 'Noto Serif', sans-serif;
+    font-size: 22px;
+    transition: all 0.3s ease;
 }
 
 .t1:hover{
@@ -61,26 +68,54 @@ body {
     height: calc(100vh - 60px); /* Розтягується на всю висоту вікна мінус висота .intro */
     background-color: #e9ded5; /* Фоновий колір */
     color: #7fa1bf; /* Колір тексту */
-    padding: 20px; /* Відступи всередині блоку */
+    padding: 30px; /* Відступи всередині блоку */
     box-sizing: border-box; /* Щоб відступи не впливали на ширину блоку */
     overflow-y: auto; /* Додає прокрутку, якщо тексту більше, ніж висота блоку */
 }
 
 /* Стиль для основного контенту сторінки */
 .content {
-    margin-left: 100px; /* Відступ зліва, щоб не перекривати лівий блок */
-    color: #e9ded5;
-    font-family: 'Noto Serif', sans-serif; /* Встановлення шрифту */
-    text-align: center;
-   margin-top: 30px; 
-   
+    margin-left: 15%; /* Відступ від лівого блоку */
+    padding: 20px; /* Відступи всередині контенту */
+    font-family: 'Noto Serif', sans-serif;
+    display: flex;
+    justify-content: flex-start; /* Вирівнюємо вміст ліворуч */
+    align-items: flex-start; /* Вирівнюємо по верхньому краю */
 }
 
-/* Стиль для тега .t6 */
+/* Для обгортки зображення та тексту */
+.content-wrapper {
+    display: flex; /* Флекс-блок для розташування зображення та тексту в рядок */
+    align-items: center; /* Вирівнюємо по центру вертикально */
+    gap: 10%; /* Відступ між зображенням і текстом */
+}
+/* Стиль для зображення */
+.content-wrapper img {
+    width: 35%; /* Ширина зображення */
+    height: auto; /* Автоматична висота */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Тінь */
+    border-radius: 8px; /* Злегка заокруглені краї */
+}
+
+/* Для текстового блоку */
+.text-block {
+    display: flex;
+    flex-direction: column; /* Розташування тексту вертикально */
+    gap: 15px; /* Відступ між текстовими рядками */
+}
+
 .t6 {
-    
-    
-    font-size: 60px; /* Розмір шрифту */
+    font-size: 50px; /* Збільшений шрифт для заголовка */
+    color: #e9ded5; /* Колір тексту */
+    margin: 0;
+    transition: all 0.3s ease; /* Плавний перехід для всіх змін */
+    display: inline-block;
+}
+
+.t7 {
+    font-size: 25px; /* Звичайний розмір шрифту для підзаголовка */
+    color: #e9ded5; /* Колір тексту */
+    margin: 0;
     transition: all 0.3s ease; /* Плавний перехід для всіх змін */
     display: inline-block;
 }
@@ -90,13 +125,6 @@ body {
     color: #4c779d; /* Змінюємо колір */
 }
 
-/* Стиль для тега .t7 */
-.t7 {
-    font-size: 20px; /* Розмір шрифту */
-    transition: all 0.3s ease; /* Плавний перехід для всіх змін */
-    display: inline-block;
-    
-}
 
 .t7:hover {
     transform: scale(1.1); /* Збільшуємо текст */
@@ -110,7 +138,7 @@ body {
     align-items: center; /* Вирівнювання по центру */
     font-size: 30px; /* Розмір шрифту */
     font-family: 'Noto Serif', sans-serif; /* Шрифт */
-    line-height: 1; /* Висота рядка між літерами */
+    line-height: 2; /* Висота рядка між літерами */
    
 }
 
@@ -120,3 +148,17 @@ body {
     display: block; /* Кожна буква буде на окремому рядку */
     margin-bottom: 5px; /* Відступ між буквами */
 }
+
+.text-block i {
+    margin-top: 10px;
+    color: #e9ded5;
+    font-size: 30px;
+    transition: all 0.2s ease; /* Плавний перехід для всіх змін */
+    display: inline-block;
+}
+
+.text-block i:hover {
+    transform: scale(1.02); /* Збільшуємо текст */   
+    color: #4c779d;
+}
+
