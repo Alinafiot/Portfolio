@@ -91,7 +91,8 @@ body {
 }
 /* Стиль для зображення */
 .content-wrapper img {
-    width: 35%; /* Ширина зображення */
+    margin-top: 4%;
+    width: 34%; /* Ширина зображення */
     height: auto; /* Автоматична висота */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Тінь */
     border-radius: 8px; /* Злегка заокруглені краї */
@@ -136,13 +137,11 @@ body {
     display: flex;
     flex-direction: column; /* Вертикальне розташування букв */
     align-items: center; /* Вирівнювання по центру */
-    font-size: 30px; /* Розмір шрифту */
+    font-size: 35px; /* Розмір шрифту */
     font-family: 'Noto Serif', sans-serif; /* Шрифт */
     line-height: 2; /* Висота рядка між літерами */
    
 }
-
-
 
 .text span {
     display: block; /* Кожна буква буде на окремому рядку */
@@ -162,3 +161,105 @@ body {
     color: #4c779d;
 }
 
+.t9{
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    padding: 8px;
+    font-family: 'Noto Serif', sans-serif;
+    font-size: 22px;
+    background-color: #e9ded5;
+    color: #7fa1bf;
+}
+
+.c1{
+    
+    margin-left: 27%; /* Відступ від лівого блоку */
+    padding: 20px; /* Відступи всередині контенту */
+    font-family: 'Noto Serif', sans-serif;
+    display: flex;
+    justify-content: flex-start; /* Вирівнюємо вміст ліворуч */
+    display: block;
+
+    margin-top: 10px;
+    color: #e9ded5;
+    font-size: 25px;
+}
+
+.t14{
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    padding: 8px;
+    font-family: 'Noto Serif', sans-serif;
+    font-size: 22px;
+    background-color: #e9ded5;
+    color: #7fa1bf;
+}
+
+.c2{
+    
+    margin-left: 27%; /* Відступ від лівого блоку */
+    padding: 20px; /* Відступи всередині контенту */
+    font-family: 'Noto Serif', sans-serif;
+    display: flex;
+    justify-content: flex-start; /* Вирівнюємо вміст ліворуч */
+    display: block;
+
+    margin-top: 10px;
+    color: #e9ded5;
+    font-size: 25px;
+}
+
+.t19{
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    padding: 8px;
+    font-family: 'Noto Serif', sans-serif;
+    font-size: 22px;
+    background-color: #e9ded5;
+    color: #7fa1bf;
+}
+
+.c3{
+    
+    margin-left: 27%; /* Відступ від лівого блоку */
+    padding: 20px; /* Відступи всередині контенту */
+    font-family: 'Noto Serif', sans-serif;
+    display: flex;
+    justify-content: flex-start; /* Вирівнюємо вміст ліворуч */
+    display: block;
+
+    margin-top: 10px;
+    color: #e9ded5;
+    font-size: 25px;
+}
+p {
+    position: relative; /* Позиціонуємо для tooltip */
+  }
+  
+  .tooltip {
+    display: none; /* Спочатку приховуємо текст */
+    position: absolute;
+    top: 100%; /* Розташування під рядком */
+    left: 0;
+    background-color: #4c779d; /* Фон підказки */
+    color: #e9ded5; /* Колір тексту */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); /* Тінь для об'єму */
+    z-index: 10; /* Виводимо поверх інших елементів */
+    white-space: nowrap; /* Запобігаємо перенесенню тексту */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Плавний ефект */
+    opacity: 0; /* Невидимий стан */
+    transform: translateY(5px); /* Зсув вниз */
+  }
+  
+  p:hover .tooltip {
+    display: block; /* Відображаємо текст */
+    opacity: 1; /* Зробити видимим */
+    transform: translateY(0); /* Повертаємо на місце */
+  }
+  
