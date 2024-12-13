@@ -2,16 +2,38 @@ body {
     background-color: #7fa1bf; /* встановлює фоновий колір */
 }
 
+
 .intro {
     position: fixed;
     display: flex;
     gap: 200px;
-    justify-content: center;
-    padding: 10px;
+    justify-content: flex-start; /* Вирівнюємо елементи на початку */
+    align-items: center; /* Вирівнюємо елементи по вертикалі */
+    padding: 10px 20px; /* Додаємо відступи: зверху/знизу — 10px, з боків — 20px */
+    padding-left: 30px; /* Невеликий відступ зліва */
     font-family: 'Noto Serif', sans-serif;
     font-size: 22px;
     background-color: #e9ded5;
     color: #7fa1bf;
+    width: 100%; /* Розтягуємо на всю ширину екрана */
+    box-sizing: border-box; /* Враховуємо padding у ширині */
+}
+
+/* Адаптивний дизайн для різних пристроїв */
+@media (max-width: 768px) { /* Для планшетів */
+    .intro {
+        flex-wrap: wrap; /* Розташування в декілька рядків, якщо елементів багато */
+        gap: 20px; /* Зменшуємо проміжок між елементами */
+        padding-left: 15px; /* Менший відступ зліва */
+    }
+}
+
+@media (max-width: 480px) { /* Для телефонів */
+    .intro {
+        font-size: 18px; /* Зменшуємо шрифт */
+        padding-left: 10px; /* Ще менший відступ зліва */
+        justify-content: center; /* Центруємо елементи */
+    }
 }
 
 .intro a {
