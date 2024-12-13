@@ -35,6 +35,11 @@ body {
         justify-content: center; /* Центруємо елементи */
     }
 }
+@media (max-width: 480px) { /* Для екранів до 480px */
+    .content-wrapper img {
+        margin-left: 20px; /* Додаємо відступ зліва */
+    }
+}
 
 .intro a {
     text-decoration: none; 
