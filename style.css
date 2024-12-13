@@ -6,7 +6,7 @@ body {
 .intro {
     position: fixed;
     display: flex;
-    gap: 200px;
+    gap: 16%;
     justify-content: flex-start; /* Вирівнюємо елементи на початку */
     align-items: center; /* Вирівнюємо елементи по вертикалі */
     padding: 10px 20px; /* Додаємо відступи: зверху/знизу — 10px, з боків — 20px */
