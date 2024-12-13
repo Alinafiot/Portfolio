@@ -92,8 +92,18 @@ body {
     color: #7fa1bf; /* Колір тексту */
     padding: 30px; /* Відступи всередині блоку */
     box-sizing: border-box; /* Щоб відступи не впливали на ширину блоку */
-    overflow-y: auto; /* Додає прокрутку, якщо тексту більше, ніж висота блоку */
+    overflow: hidden;
 }
+
+/* Ліва панель для телефонів */
+@media (max-width: 480px) { /* Адаптація для екранів менше 480px */
+    .left-panel {
+        width: 80px; /* Менша ширина для телефону */
+        padding: 10px; /* Зменшуємо внутрішні відступи */
+        font-size: 14px; /* Зменшуємо розмір тексту */
+    }
+}
+
 
 /* Стиль для основного контенту сторінки */
 .content {
@@ -155,7 +165,7 @@ body {
 }
 
 .text {
-    margin-top: 50px;
+    margin-top: 3%;
     display: flex;
     flex-direction: column; /* Вертикальне розташування букв */
     align-items: center; /* Вирівнювання по центру */
@@ -167,7 +177,7 @@ body {
 
 .text span {
     display: block; /* Кожна буква буде на окремому рядку */
-    margin-bottom: 5px; /* Відступ між буквами */
+    margin-bottom: 1%; /* Відступ між буквами */
 }
 
 .text-block i {
