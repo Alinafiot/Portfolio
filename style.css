@@ -40,6 +40,11 @@ body {
         margin-left: 20px; /* Додаємо відступ зліва */
     }
 }
+@media (max-width: 480px) { /* Для екранів до 480px */
+    .left-panel {
+        top: 80px; /* Збільшуємо відступ між intro і лівою панеллю */
+    }
+}
 
 .intro a {
     text-decoration: none; 
